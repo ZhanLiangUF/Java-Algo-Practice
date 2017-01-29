@@ -8,6 +8,7 @@ public class SumOfTwoIntegers {
     while (b!=0) {
       int c = a&b;
       a = a^b;
+      // shift left for the carry
       b = c<<1;
     }
     return a;
