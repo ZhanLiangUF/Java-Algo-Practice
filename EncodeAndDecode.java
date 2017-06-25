@@ -14,12 +14,14 @@ public static void main(String[] args) {
 // Encodes a URL to a shortened URL.
 public String encode(String longUrl) {
    urls.add(longUrl);
+  //  System.out.print(String.valueOf(urls.size()-1));
    return String.valueOf(urls.size()-1);
 }
 
 // Decodes a shortened URL to its original URL.
 public String decode(String shortUrl) {
    int index = Integer.valueOf(shortUrl);
+   System.out.print( urls.get(index));
    return (index<urls.size())?urls.get(index):"";
 }
 }
